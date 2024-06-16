@@ -1,0 +1,6 @@
+npm init -y
+npm install express body-parser
+npm install nodemailer
+npm install dotenv
+npm install express-validator
+npm install express body-parser nodemailer express-validator

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best PG in Karol Bagh | Krishnapg.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        
+        .whatsapp-btn img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="Krishnapg.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact-box">Contact Us</a></li>
+            <li class="item"><a href="#" onclick="openLocation(event)">Location</a></li>
+        </ul>
+        
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Shree Krishna PG</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button class="btn">Book Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Available Rooms</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/5.jpeg" alt="">
+                <h2 class="h-secondary center">Single Room</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="img/6.jpeg" alt="">
+                <h2 class="h-secondary center">Double Sharing </h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="img/7.jpeg" alt="">
+                <h2 class="h-secondary center">Triple Sharing</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat vel ab!
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h1 class="h-primary center">Contact Us</h1>
+        <!-- <div class="contact">
+            <img src="contact.jpg" alt="Contact Background">
+        </div> -->
+        <div id="contact-box">
+            
+            <form id="contactForm" action="/contact" method="post">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="center">
+        Copyright &copy; www.krishnapg.com All rights reserved!
+    </footer>
+
+    <a class="whatsapp-btn" target="_blank" href="https://wa.me/+918810477281">
+        <img src="whatsapp.jpg" alt="WhatsApp">
+    </a>
+
+    <script>
+        function openLocation(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+            // Replace with your latitude and longitude
+            const latitude = 28.6528;
+            const longitude = 77.1917;
+            const zoom = 15; // Adjust zoom level as needed
+            const url = `https://maps.app.goo.gl/3r4TNBqKoqh6LNru8`;
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>
